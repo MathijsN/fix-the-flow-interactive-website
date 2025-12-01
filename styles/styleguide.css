@@ -1,0 +1,14 @@
+:root {
+    --spacing-m: 2rem;
+    --spacing-s: calc(var(--spacing-m) / 2);
+
+    --color-primary: #002544;
+    --color-secondary: #fff;
+    --color-accent: #D8B66A;
+}
+
+main {
+    section {
+        padding-inline: var(--spacing-s);
+    }
+}
