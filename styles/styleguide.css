@@ -1,14 +1,26 @@
 :root {
-    --spacing-m: 2rem;
-    --spacing-s: calc(var(--spacing-m) / 2);
-
-    --color-primary: #002544;
+    --color-primary: #002646;
     --color-secondary: #fff;
-    --color-accent: #D8B66A;
+    --color-accent: #d8b66a;
+    --color-inactive: #E9E9E9;
+    --color-inactive-dark: #6E6E6E;
+
+    --spacing-s: calc(var(--spacing-m) / 2);
+    --spacing-m: 1.8rem;
+
+
+    --animation-duration: 0.3s;
+
+    --font-size-xxl: 4rem;
+    --font-size-xl: 3rem;
+    --font-size-l: 2rem;
+    --font-size-m: 1.5rem;
+    --font-size-s: 1rem;
 }
 
 main {
     section {
+        margin-inline: var(--spacing-s);
         padding-inline: var(--spacing-s);
     }
 }
