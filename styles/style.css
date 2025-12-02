@@ -1,3 +1,140 @@
-section {
-    background-color: antiquewhite;
+section.hero {
+    background-image: url(../assets/images/background-plan-your-visit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin-inline: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-block: var(--spacing-m);
+
+    button {
+        padding-block: var(--spacing-s);
+        border-radius: var(--border-radius-s);
+        background-color: #000000cb;
+        backdrop-filter: blur(12px);
+        color: var(--color-secondary);
+        font-size: var(--font-size-s);
+
+        position: sticky;
+        top: var(--spacing-m);
+        margin-bottom: calc(var(--spacing-m) * 3);
+
+        border: none;
+        transition: all var(--animation-duration);
+
+        &:hover {
+            padding-bottom: calc(var(--spacing-m) * 1.5);
+            transition: all var(--animation-duration);
+            cursor: pointer;
+        }
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+    }
+
+    [popover] {
+        position: fixed;
+        top: var(--spacing-m);
+        width: 95%;
+        padding: var(--border-radius-m);
+        justify-self: center;
+
+        border: 0;
+        border-radius: var(--border-radius-m);
+        background-color: #000000cb;
+        backdrop-filter: blur(12px);
+
+        transition:
+            opacity var(--animation-duration) ease-out,
+            height var(--animation-duration) allow-discrete,
+            scale var(--animation-duration) ease,
+            display var(--animation-duration) allow-discrete;
+        opacity: 0;
+        height: 0;
+        transform-origin: top;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, min-content);
+        row-gap: var(--spacing-m);
+
+        p {
+            grid-column: span 2;
+        }
+
+        svg {
+            justify-self: end;
+
+            transition: all var(--animation-duration);
+            
+            @media (any-pointer: fine ) {
+                &:hover {
+                    transform: rotate(0.5turn) scale(1.2);
+                }
+            }
+        }
+
+
+        div.checkout-progressbar {
+            grid-column: span 3;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: min-content min-content;
+
+            progress {
+                grid-column: span 3;
+                width: 100%;
+                -webkit-appearance: none;
+
+                &::-webkit-progress-bar {
+                    background-color: var(--color-inactive);
+                    height: 0.5rem;
+                    border-radius: var(--border-radius-s);
+                }
+
+                &::-webkit-progress-value {
+                    background-color: var(--color-accent);
+                    border-radius: var(--border-radius-s);
+                }
+            }
+
+            p:nth-of-type(1) {
+                grid-column: 1/2;
+                color: var(--color-accent);
+            }
+
+            p:nth-of-type(2) {
+                grid-column: 2/3;
+            }
+
+            p:nth-of-type(3) {
+                grid-column: 3/4;
+            }
+        }
+    }
+
+    [popover]:popover-open {
+        opacity: 1;
+        height: 95%;
+        display: grid;
+
+        @starting-style {
+            opacity: 0;
+            height: 0;
+        }
+    }
+}
+
+
+
+section.s2 {
+    height: 300vh;
 }
