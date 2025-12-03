@@ -2,7 +2,7 @@ header {
     background-color: #000000cb;
     backdrop-filter: blur(12px);
     position: sticky;
-    top:0;
+    top: 0;
     padding-block: 0.25rem;
     z-index: 10;
 
@@ -11,7 +11,6 @@ header {
     align-content: center;
 
     padding-inline: var(--spacing-s);
-
 
     img {
         width: 5rem;
@@ -24,6 +23,56 @@ header {
     button {
         background-color: transparent;
         border: none;
+    }
+
+    &.menu-open {
+        position: fixed;
+        inset: 0;
+        padding-inline: var(--spacing-s);
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: min-content 1fr;
+
+        button {
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+            text-align: end;
+
+            svg {
+                width: 1.2rem;
+                height: 1.2rem;
+                path {
+                    d: path("M6.575 7.975L1.675 12.875C1.49167 13.0583 1.25833 13.15 0.975 13.15C0.691667 13.15 0.458333 13.0583 0.275 12.875C0.0916663 12.6917 0 12.4583 0 12.175C0 11.8917 0.0916663 11.6583 0.275 11.475L5.175 6.575L0.275 1.675C0.0916663 1.49167 0 1.25833 0 0.975C0 0.691667 0.0916663 0.458333 0.275 0.275C0.458333 0.0916663 0.691667 0 0.975 0C1.25833 0 1.49167 0.0916663 1.675 0.275L6.575 5.175L11.475 0.275C11.6583 0.0916663 11.8917 0 12.175 0C12.4583 0 12.6917 0.0916663 12.875 0.275C13.0583 0.458333 13.15 0.691667 13.15 0.975C13.15 1.25833 13.0583 1.49167 12.875 1.675L7.975 6.575L12.875 11.475C13.0583 11.6583 13.15 11.8917 13.15 12.175C13.15 12.4583 13.0583 12.6917 12.875 12.875C12.6917 13.0583 12.4583 13.15 12.175 13.15C11.8917 13.15 11.6583 13.0583 11.475 12.875L6.575 7.975Z");
+                }
+            }
+        }
+
+        ul {
+            grid-column: span 2;
+
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-m);
+            align-items: center;
+            justify-content: center;
+
+            list-style: none;
+            
+            li {
+
+                a {
+                    text-align: center;
+
+                    &::after {
+                        all: unset;
+                    }
+                }
+            }
+
+        }
     }
 }
 
@@ -108,7 +157,7 @@ section.hero {
 
             svg {
                 transition: all var(--animation-duration);
-    
+
                 @media (any-pointer: fine) {
                     &:hover {
                         transform: rotate(0.5turn) scale(1.2);
