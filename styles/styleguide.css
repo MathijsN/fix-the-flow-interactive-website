@@ -65,6 +65,7 @@ h2 {
 p {
     font-size: var(--font-size-s);
     line-height: 1.4;
+    color: var(--color-secondary);
 
     &.bold {
         font-weight: bold;
