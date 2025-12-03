@@ -71,17 +71,23 @@ section.hero {
             grid-column: span 2;
         }
 
-        svg {
+        .close-popover-button {
+            padding: 0;
+            margin: 0;
             justify-self: end;
+            position: unset;
 
-            transition: all var(--animation-duration);
-
-            @media (any-pointer: fine) {
-                &:hover {
-                    transform: rotate(0.5turn) scale(1.2);
+            svg {
+                transition: all var(--animation-duration);
+    
+                @media (any-pointer: fine) {
+                    &:hover {
+                        transform: rotate(0.5turn) scale(1.2);
+                    }
                 }
             }
         }
+
 
 
         div.checkout-progressbar {
