@@ -1,9 +1,10 @@
-console.log("hello world")
-// const popoverCloseIcon = document.querySelector('[popover] svg')
-// const popover = document.querySelector('#my-popover')
+const planVisitButton = document.querySelector('.plan-visit-button').addEventListener('click', removeButton)
+document.querySelector('.close-popover-button').addEventListener('click', addButton)
 
-// popoverCloseIcon.addEventListener('click', closePopover)
+function removeButton() {
+    planVisitButton.style.visibility = "hidden";
+}
 
-// function closePopover() {
-//     popover.hidePopover()
-// }
+function addButton() {
+    planVisitButton.style.visibility = "visible";
+}
