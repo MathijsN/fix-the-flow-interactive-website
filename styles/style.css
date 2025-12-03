@@ -26,6 +26,7 @@ header {
 
         svg {
             transition: all var(--animation-duration);
+            transform-origin: center;
         }
     }
 
@@ -49,6 +50,7 @@ header {
                 width: 1.2rem;
                 height: 1.2rem;
                 transition: all var(--animation-duration);
+                transform-origin: center;
                 overflow: visible;
 
                 path {
@@ -84,6 +86,10 @@ header {
 }
 
 section.hero {
+
+}
+
+section.plan-your-visit {
     background-image: url(../assets/images/background-plan-your-visit.png);
     background-repeat: no-repeat;
     background-position: center;
