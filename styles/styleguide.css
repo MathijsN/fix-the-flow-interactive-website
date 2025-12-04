@@ -78,6 +78,8 @@ a {
     display: flex;
     gap: 1rem;
     text-decoration: none;
+    height: min-content;
+    width: max-content;
 
     &::after {
         content: '';
@@ -87,5 +89,15 @@ a {
         background-size: 100% 100%;
         display: block;
         transform: rotate(90deg);
+        transition: all var(--animation-duration);
+    }
+
+    @media (any-pointer: fine) {
+        &:hover {
+            &::after {
+                transform: translateX(var(--spacing-m)) rotate(90deg);
+                transition: all var(--animation-duration);
+            }
+        }
     }
 }
