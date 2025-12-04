@@ -194,6 +194,14 @@ section.exhibition {
 
     @media (width > 900px) {
         height: 50vh;
+        transition: all var(--animation-duration);
+
+        @media (any-pointer: fine) {
+            &:hover {
+                transition: all var(--animation-duration);
+                background-position: 48% 48%;
+            }
+        }
     }
 }
 
@@ -350,5 +358,13 @@ section.plan-your-visit {
 
     @media (width > 900px) {
         height: 50vh;
+        transition: all var(--animation-duration);
+
+        @media (any-pointer: fine) {
+            &:hover {
+                transition: all var(--animation-duration);
+                background-position: 48% 48%;
+            }
+        }
     }
 }
