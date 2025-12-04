@@ -38,6 +38,27 @@ header {
         }
     }
 
+    @media (width > 900px) {
+        padding-block: var(--spacing-s);
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: calc(var(--spacing-m) * 2);
+            align-items: center;
+
+            a {
+                &::after {
+                    all: unset;
+                }
+            }
+        }
+
+        button {
+            display: none;
+        }
+    }
+
     &.menu-open {
         position: fixed;
         inset: 0 var(--spacing-m) 0 0;
