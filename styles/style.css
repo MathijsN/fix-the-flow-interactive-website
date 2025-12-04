@@ -92,11 +92,13 @@ section.hero {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-block: var(--spacing-m);
+    padding-block: calc(var(--spacing-m) * 3) var(--spacing-m);
 
     display: grid;
     grid-template-rows: 1fr min-content min-content;
     row-gap: var(--spacing-m);
+
+    transform: translateY(-3rem);
 
     ul {
         list-style: none;
