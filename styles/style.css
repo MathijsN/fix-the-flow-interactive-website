@@ -134,6 +134,10 @@ section.hero {
     grid-template-rows: 1fr min-content min-content;
     row-gap: var(--spacing-m);
 
+    h2 {
+        max-width: 20rem;
+    }
+
     ul {
         list-style: none;
 
@@ -141,6 +145,26 @@ section.hero {
         flex-direction: column;
         gap: var(--spacing-s);
     }
+
+     @media (width > 900px) {
+        background-position: top;
+        grid-template-columns: repeat(3,1fr);
+
+        h1 {
+            align-self: flex-end;
+            grid-column: span 2;
+        }
+        h2 {
+            grid-column: span 2;
+        }
+
+        ul {
+            flex-direction: row;
+            justify-content: space-between;
+            grid-row: 3/4;
+            grid-column: 1 /-1;
+        }
+     }
 }
 
 section.exhibition {
@@ -154,6 +178,10 @@ section.exhibition {
     display: grid;
     grid-template-rows: min-content 1fr repeat(3, min-content);
     row-gap: var(--spacing-s);
+
+    p {
+        max-width: 20rem;
+    }
 }
 
 section.plan-your-visit {
@@ -178,7 +206,7 @@ section.plan-your-visit {
         font-size: var(--font-size-s);
 
         position: sticky;
-        top: calc(var(--spacing-m) * 2);
+        top: calc(var(--spacing-m) * 3);
         margin-bottom: calc(var(--spacing-m) * 3);
 
         border: none;

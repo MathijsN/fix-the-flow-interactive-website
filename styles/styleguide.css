@@ -28,8 +28,8 @@
 
     --animation-duration: 0.3s;
 
-    --font-size-xxl: 4rem;
-    --font-size-xl: 3rem;
+    --font-size-xxl: 6rem;
+    --font-size-xl: 4rem;
     --font-size-l: 2rem;
     --font-size-m: 1.5rem;
     --font-size-s: 1rem;
@@ -51,9 +51,16 @@ body {
 
 h1 {
     font-family: Cinzel, 'Times New Roman', Times, serif;
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
     line-height: 0.85;
     font-weight: 400;
+    max-width: 30rem;
+
+
+    @media (width > 900px) {
+        font-size: var(--font-size-xxl);
+        max-width: 50rem;
+    }
 }
 
 h2 {
