@@ -107,6 +107,19 @@ section.hero {
     }
 }
 
+section.exhibition {
+    background-image: url(../assets/images/exchibitionBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    padding-block: var(--spacing-m);
+    display: grid;
+    grid-template-rows: min-content 1fr repeat(3, min-content);
+    row-gap: var(--spacing-s);
+}
+
 section.plan-your-visit {
     background-image: url(../assets/images/insideMuseum.png);
     background-repeat: no-repeat;
