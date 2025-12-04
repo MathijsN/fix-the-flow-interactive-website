@@ -15,6 +15,8 @@ header {
 
     padding-inline: var(--spacing-s);
 
+    transition: all var(--animation-duration);
+
     img {
         width: 5rem;
     }
@@ -35,13 +37,16 @@ header {
 
     &.menu-open {
         position: fixed;
-        inset: 0;
+        inset: 0 var(--spacing-m) 0 0;
         padding-inline: var(--spacing-s);
 
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: min-content 1fr;
+        row-gap: calc(var(--spacing-m) * 2);
+
+        transition: all var(--animation-duration);
 
         img {
             visibility: hidden;
@@ -71,9 +76,9 @@ header {
 
             display: flex;
             flex-direction: column;
-            gap: var(--spacing-m);
-            align-items: center;
-            justify-content: center;
+            gap: calc(var(--spacing-m) * 2);
+            /* align-items: center; */
+            /* justify-content: center; */
 
             list-style: none;
             
