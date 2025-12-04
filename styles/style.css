@@ -122,6 +122,13 @@ header {
     }
 }
 
+main {
+    @media (width > 900px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 section.hero {
     height: 100vh;
     background-image: url(../assets/images/heroBG.png);
@@ -146,14 +153,16 @@ section.hero {
         gap: var(--spacing-s);
     }
 
-     @media (width > 900px) {
+    @media (width > 900px) {
         background-position: top;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: span 2;
 
         h1 {
             align-self: flex-end;
             grid-column: span 2;
         }
+
         h2 {
             grid-column: span 2;
         }
@@ -164,7 +173,7 @@ section.hero {
             grid-row: 3/4;
             grid-column: 1 /-1;
         }
-     }
+    }
 }
 
 section.exhibition {
@@ -181,6 +190,10 @@ section.exhibition {
 
     p {
         max-width: 20rem;
+    }
+
+    @media (width > 900px) {
+        height: 50vh;
     }
 }
 
@@ -200,10 +213,12 @@ section.plan-your-visit {
     button {
         padding-block: var(--spacing-s);
         border-radius: var(--border-radius-s);
-        background-color: #000000cb;
+        /* background-color: #000000cb;
         backdrop-filter: blur(12px);
-        color: var(--color-secondary);
+        color: var(--color-secondary); */
         font-size: var(--font-size-s);
+
+        background-color: var(--color-secondary);
 
         position: sticky;
         top: calc(var(--spacing-m) * 3);
@@ -263,6 +278,7 @@ section.plan-your-visit {
             margin: 0;
             justify-self: end;
             position: unset;
+            background-color: unset;
 
             svg {
                 transition: all var(--animation-duration);
@@ -314,6 +330,10 @@ section.plan-your-visit {
                 grid-column: 3/4;
             }
         }
+
+        @media (width > 900px) {
+            top: calc(var(--spacing-m) * 3.5);
+        }
     }
 
     [popover]:popover-open {
@@ -325,5 +345,10 @@ section.plan-your-visit {
             opacity: 0;
             height: 0;
         }
+    }
+
+
+    @media (width > 900px) {
+        height: 50vh;
     }
 }
