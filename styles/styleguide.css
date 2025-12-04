@@ -92,6 +92,12 @@ a {
         transition: all var(--animation-duration);
     }
 
+    &.tickets {
+        padding: var(--spacing-s) var(--spacing-m);
+        background-color: var(--color-primary);
+        border-radius: var(--border-radius-s);
+    }
+
     @media (any-pointer: fine) {
         &:hover {
             &::after {

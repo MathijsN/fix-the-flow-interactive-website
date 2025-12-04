@@ -2,8 +2,10 @@
 header {
     background-color: #000000cb;
     backdrop-filter: blur(12px);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     padding-block: 0.25rem;
     z-index: 10;
 
@@ -40,6 +42,10 @@ header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: min-content 1fr;
+
+        img {
+            visibility: hidden;
+        }
 
         button {
             grid-column: 2/3;
@@ -92,13 +98,11 @@ section.hero {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-block: calc(var(--spacing-m) * 3) var(--spacing-m);
+    padding-block:  calc(var(--spacing-m) * 3) var(--spacing-m);
 
     display: grid;
     grid-template-rows: 1fr min-content min-content;
     row-gap: var(--spacing-m);
-
-    transform: translateY(-3rem);
 
     ul {
         list-style: none;
