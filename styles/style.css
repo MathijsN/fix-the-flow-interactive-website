@@ -221,10 +221,8 @@ section.plan-your-visit {
     button {
         padding-block: var(--spacing-s);
         border-radius: var(--border-radius-s);
-        /* background-color: #000000cb;
-        backdrop-filter: blur(12px);
-        color: var(--color-secondary); */
         font-size: var(--font-size-s);
+        color: var(--color-primary);
 
         background-color: var(--color-secondary);
 
