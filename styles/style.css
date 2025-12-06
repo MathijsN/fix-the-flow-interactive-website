@@ -344,7 +344,7 @@ section.plan-your-visit {
 
     [popover]:popover-open {
         opacity: 1;
-        height: 90%;
+        height: 85%;
         display: grid;
 
         @starting-style {
