@@ -275,6 +275,10 @@ section.plan-your-visit {
 
         overflow-y: hidden;
 
+        @media (width > 900px) {
+            top: calc(var(--spacing-m) * 3.5);
+        }
+
         p {
             grid-column: span 2;
         }
@@ -337,8 +341,24 @@ section.plan-your-visit {
             }
         }
 
-        @media (width > 900px) {
-            top: calc(var(--spacing-m) * 3.5);
+        article.ticket {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+
+            form {
+                color: var(--color-secondary);
+
+                label {
+                    display: flex;
+                    justify-content: space-between;
+
+                    input {
+                        margin-left: var(--spacing-s);
+                    }
+                }
+
+            }
         }
     }
 
