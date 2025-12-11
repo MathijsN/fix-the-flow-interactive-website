@@ -1,6 +1,6 @@
 header {
     background-color: #000000cb;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(50px);
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +24,7 @@ header {
         display: none;
     }
 
-    button {
+    > button {
         background-color: transparent;
         border: none;
 
@@ -54,7 +54,7 @@ header {
             }
         }
 
-        button {
+        > button {
             display: none;
         }
     }
@@ -235,9 +235,11 @@ section.plan-your-visit {
 
         @media (any-pointer: fine) {
             &:hover {
-                padding-bottom: calc(var(--spacing-m) * 1.5);
                 transition: all var(--animation-duration);
                 cursor: pointer;
+
+                color: var(--color-secondary);
+                background-color: var(--color-primary);
             }
         }
     }
@@ -250,7 +252,7 @@ section.plan-your-visit {
 
     [popover] {
         position: fixed;
-        top: calc(var(--spacing-m) * 2.5);
+        top: var(--spacing-m);
         width: 95%;
         padding: var(--border-radius-m);
         justify-self: center;
@@ -258,7 +260,7 @@ section.plan-your-visit {
         border: 0;
         border-radius: var(--border-radius-m);
         background-color: #000000cb;
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(50px);
 
         transition:
             opacity var(--animation-duration) ease-out,
@@ -276,7 +278,11 @@ section.plan-your-visit {
         overflow-y: hidden;
 
         @media (width > 900px) {
-            top: calc(var(--spacing-m) * 3.5);
+            top: calc(var(--spacing-m) * 2.5);
+        }
+
+        &::backdrop {
+            backdrop-filter: blur(50px);
         }
 
         p {
@@ -355,6 +361,7 @@ section.plan-your-visit {
 
                     input {
                         margin-left: var(--spacing-s);
+                        width: 12rem;
                     }
                 }
 
@@ -364,7 +371,7 @@ section.plan-your-visit {
 
     [popover]:popover-open {
         opacity: 1;
-        height: 85%;
+        height: 90%;
         display: grid;
 
         @starting-style {
