@@ -157,6 +157,7 @@ section.hero {
         background-position: top;
         grid-template-columns: repeat(3, 1fr);
         grid-column: span 2;
+        background-image: url(../assets/images/embassyHeroBG.png);
 
         h1 {
             align-self: flex-end;
