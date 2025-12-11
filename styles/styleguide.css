@@ -74,9 +74,9 @@ p {
     line-height: 1.4;
     color: var(--color-secondary);
 
-    &.bold {
-        font-weight: bold;
-    }
+}
+.bold {
+    font-weight: bold;
 }
 
 button.tickets {
