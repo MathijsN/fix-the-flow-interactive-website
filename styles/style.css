@@ -184,6 +184,8 @@ section.hero {
 
 section.exhibition {
     background-image: url(../assets/images/exchibitionBG.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -213,6 +215,8 @@ section.exhibition {
 
 section.plan-your-visit {
     background-image: url(../assets/images/insideMuseum.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -362,6 +366,11 @@ section.plan-your-visit {
         }
     }
 
+    > button.plan-visit-button {
+        @media (width > 900px) {
+            visibility: hidden;
+        }
+    }
 
     @media (width > 900px) {
         height: 50vh;

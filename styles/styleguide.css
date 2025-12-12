@@ -115,6 +115,7 @@ button.plan-visit-button {
         }
 }
 
+
 button.tickets {
         padding: var(--spacing-s) var(--spacing-m);
         background-color: var(--color-secondary);
