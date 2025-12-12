@@ -143,6 +143,11 @@ section.hero {
 
     h2 {
         max-width: 20rem;
+        display: none;
+
+        @media (width > 900px) {
+            display: block;
+        }
     }
 
     ul {
@@ -218,32 +223,7 @@ section.plan-your-visit {
     justify-content: space-between;
 
     padding-block: var(--spacing-m);
-
-    button {
-        padding-block: var(--spacing-s);
-        border-radius: var(--border-radius-s);
-        font-size: var(--font-size-s);
-        color: var(--color-primary);
-
-        background-color: var(--color-secondary);
-
-        position: sticky;
-        top: calc(var(--spacing-m) * 3);
-        margin-bottom: calc(var(--spacing-m) * 3);
-
-        border: none;
-        transition: all var(--animation-duration);
-
-        @media (any-pointer: fine) {
-            &:hover {
-                transition: all var(--animation-duration);
-                cursor: pointer;
-
-                color: var(--color-secondary);
-                background-color: var(--color-primary);
-            }
-        }
-    }
+    
 
     article {
         display: flex;
@@ -295,7 +275,8 @@ section.plan-your-visit {
             margin: 0;
             justify-self: end;
             position: unset;
-            background-color: unset;
+            background-color: transparent;
+            border: none;
 
             svg {
                 transition: all var(--animation-duration);
