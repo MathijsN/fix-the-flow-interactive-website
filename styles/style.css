@@ -352,6 +352,10 @@ section.plan-your-visit {
                 }
             }
 
+            .active-form-p {
+                color: var(--color-accent);
+            }
+
             p:nth-of-type(1) {
                 grid-column: 1/2;
                 color: var(--color-accent);
