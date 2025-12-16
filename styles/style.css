@@ -450,6 +450,10 @@ footer {
             padding: 10px;
             color: var(--color-secondary);
             font-size: var(--font-size-s);
+
+            &::placeholder {
+                color: rgb(165, 165, 165);
+            }
         }
     }
 
