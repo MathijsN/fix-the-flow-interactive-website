@@ -24,6 +24,14 @@ header {
         display: none;
     }
 
+    a {
+        @media (any-pointer: fine) {
+                        &:hover {
+                            color: var(--color-accent);
+                        }
+                    }
+    }
+
     >button {
         background-color: transparent;
         border: none;
@@ -227,7 +235,7 @@ section.plan-your-visit {
     justify-content: space-between;
 
     padding-block: var(--spacing-m);
-    
+
 
     article {
         display: flex;
@@ -366,7 +374,7 @@ section.plan-your-visit {
         }
     }
 
-    > button.plan-visit-button {
+    >button.plan-visit-button {
         @media (width > 900px) {
             visibility: hidden;
         }
@@ -465,9 +473,19 @@ footer {
             li {
                 padding-block: var(--spacing-s);
 
-                a::after {
-                    all: unset;
+                a {
+
+                    @media (any-pointer: fine) {
+                        &:hover {
+                            color: var(--color-accent);
+                        }
+                    }
+
+                    &::after {
+                        all: unset;
+                    }
                 }
+
             }
         }
 
@@ -477,8 +495,8 @@ footer {
             align-self: end;
 
             @media (width > 900px) {
-         grid-column: 3/4;
-        }
+                grid-column: 3/4;
+            }
 
             li {
                 &:nth-of-type(1) {
