@@ -450,6 +450,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
+        @media (width > 900px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
         li {
             list-style: none;
         }
@@ -471,6 +475,10 @@ footer {
             grid-column: 2/3;
             grid-row: 2/3;
             align-self: end;
+
+            @media (width > 900px) {
+         grid-column: 3/4;
+        }
 
             li {
                 &:nth-of-type(1) {
