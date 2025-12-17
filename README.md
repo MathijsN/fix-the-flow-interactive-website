@@ -32,7 +32,8 @@ Met CSS heb ik de website gestyled ook heb ik er voor gezorgd met behulp van hov
 #### JS
 Met Javascript heb ik de website interactief gemaakt. Het uitklapbare hamburgermenu en de progress bar (binnen de 'plan je bezoek' popover) zijn beide werkend gemaakt met Javascript.
 
-<img width="1368" height="2828" alt="mockuuups-free-transparent-iphone-air-mockup" src="https://github.com/user-attachments/assets/f047b9fd-9068-4c75-846a-101e34dd3255" />
+<img width="634" height="476" alt="123" src="https://github.com/user-attachments/assets/afb9e044-122e-4a89-8746-32700466d9e3" />
+
 
 
 
