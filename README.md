@@ -12,10 +12,10 @@ De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the
 <!-- Voeg een link toe naar Github Pages 🌐-->
 Ontwerp en maak een interactieve website voor een opdrachtgever.
 
-### User story
+#### User story
 Als toerist wil ik mijn bezoek plannen.
 
-### Scenario
+#### Scenario
 Ik ben een man uit Brabant van 40 jaar oud, ik ben met mijn gezin dit weekend in Amsterdam en ben op zoek naar iets wat leuk is om te doen. Ik ben overtuigd om het museum te gaan bezoeken en zou graag online een kaartje willen kopen voor mij en mijn gezin.
 
 ## Kenmerken
