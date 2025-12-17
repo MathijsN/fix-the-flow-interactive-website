@@ -34,6 +34,7 @@ Met Javascript heb ik de website interactief gemaakt. Het uitklapbare hamburgerm
 
 <img width="634" height="476" alt="123" src="https://github.com/user-attachments/assets/afb9e044-122e-4a89-8746-32700466d9e3" />
 
+<img width="954" height="636" alt="mockuuups-macbook-pro-space-gray-mockup-on-the-wooden-table 1" src="https://github.com/user-attachments/assets/f70635fc-055f-44f5-bd4f-792209e6c0f2" />
 
 
 
